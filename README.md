@@ -1,6 +1,12 @@
 ### laios10appdevesst1
 ####2.
 #####Dismiss the keyboard with delegation
+```
+class ViewController: UIViewController, UITextFieldDelegate
+```
+The ViewController can be a delegate for a UITextField,  
+the next step is to assign this ViewController class as a delegate of the textfield.
+
 #####Troubleshoot UI-to-code connections
 If you see some event handler's circie is not filled, go to storyboard, click the element that is not handles (say, a button.) click the button in storyboard, choose Send events->touch up inside, drag to controller icon (1 of 3)
 ####3. Build a Simple App
