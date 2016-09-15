@@ -1,5 +1,15 @@
 ### laios10appdevesst1
 ####2.
+#####Handle a button press
+memorize: Action, default is Touch Up Inside
+#####Alternate ways to connect outlets and actions(manually)
+IB: interface builder  
+hard code:
+```
+@IBOutlet var myLabel:UILabel!
+```
+then go to storyboard->click the label->connection (1 of 3)connections inspector->drag to(1 of3)
+#####Text fields
 #####First responders
 cmd+k toggle keyboard(in simulator)
 ```
@@ -8,7 +18,7 @@ become/resignFirstResponder()
 touch View to end editing:
 ```
 override func touchesBegan(_ touches:Set<UITouch>, with event:UIEvent?){
-  
+  view.endEditing(true)
 }
 ```
 #####Dismiss the keyboard with delegation
