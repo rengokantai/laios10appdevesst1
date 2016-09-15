@@ -2,6 +2,15 @@
 ####2.
 #####First responders
 cmd+k toggle keyboard(in simulator)
+```
+become/resignFirstResponder()
+```
+touch View to end editing:
+```
+override func touchesBegan(_ touches:Set<UITouch>, with event:UIEvent?){
+  
+}
+```
 #####Dismiss the keyboard with delegation
 ```
 class ViewController: UIViewController, UITextFieldDelegate
